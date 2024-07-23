@@ -6,9 +6,6 @@
 //
 
 import Foundation
-import Alamofire
-import PythonKit
-
 class CustomAudioPlayer {
     
     var timer: Timer?
@@ -17,29 +14,6 @@ class CustomAudioPlayer {
         
     }
     
-    
-    func runPythonScript() {
-        // Proje dizinindeki apple.py dosyasının yolunu belirtin
-        guard let scriptPath = Bundle.main.path(forResource: "apple", ofType: "py") else {
-            print("apple.py dosyası bulunamadı")
-            return
-        }
-        
-        // PythonKit kullanarak subprocess modülünü içe aktar
-        let sys = Python.import("sys")
-        sys.path.append(scriptPath)
-        
-        let subprocess = Python.import("subprocess")
-        
-        do {
-            // Python betiğini çalıştır ve çıktıyı al
-            let result = subprocess.run(["python3", scriptPath], capture_output: true, text: true)
-            let output = result.stdout
-            print("Python script output: \(output)")
-        } catch {
-            print("Failed to run Python script: \(error)")
-        }
-    }
     
     func makeRequest(_ flag: Bool) {
         let url = URL(string: "https://mdtest.limakcimento.com/cevik/api/gateway")!

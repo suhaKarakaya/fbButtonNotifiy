@@ -6,147 +6,52 @@
 //
 
 import UIKit
-import Firebase
-import UserNotifications
+
+import OneSignalFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
-    static var token: String = ""
-    static var response: String = ""
-    var customPlayer: CustomAudioPlayer?
-
+    var userId = ""
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
-        Messaging.messaging().delegate = self
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
+                     [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // Remove this method to stop OneSignal Debugging
+        OneSignal.Debug.setLogLevel(.LL_VERBOSE)
+        
+        // OneSignal initialization
+        OneSignal.initialize("363e61c4-affe-4352-b693-397a750b6b60", withLaunchOptions: launchOptions)
+        
+        // requestPermission will show the native iOS notification permission prompt.
+        // We recommend removing the following code and instead using an In-App Message to prompt for notification permission
+        OneSignal.Notifications.requestPermission({ accepted in
+            print("User accepted notifications: \(accepted)")
+            self.userId = OneSignal.User.pushSubscription.id ?? ""
+        }, fallbackToSettings: true)
+        
+        // Login your customer with externalId
+        // OneSignal.login("EXTERNAL_ID")
         
         
-        
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().delegate = self
-            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-            UNUserNotificationCenter.current().requestAuthorization(
-                options: authOptions,
-                completionHandler: {_, _ in })
-        } else {
-            let settings: UIUserNotificationSettings =
-            UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            application.registerUserNotificationSettings(settings)
-        }
-        
-        application.registerForRemoteNotifications()
-        
-        setupNotificationActions()
+        userId = OneSignal.User.pushSubscription.id ?? ""
         
         return true
     }
-    
-    func requestNotificationAuthorization() {
-        
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Messaging.messaging().apnsToken = deviceToken
-    }
-    
-//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-//        
-//        // Bildirimi işle
-//        if let aps = userInfo["aps"] as? [String: AnyObject],
-//           let alert = aps["alert"] as? [String: AnyObject],
-//           let title = alert["title"] as? String,
-//           let body = alert["body"] as? String {
-//            
-//            // Bildirimi göster (isteğe bağlı)
-//            let alertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
-//            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//            self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
-//            
-//            // Veri alanını işle (isteğe bağlı)
-//            if let data = userInfo["data"] as? [String: Any] {
-//                if let key1 = data["key1"] as? String {
-//                    print("key1: \(key1)")
-//                    // Key1'e göre işlemler yapabilirsiniz
-//                }
-//                if let key2 = data["key2"] as? String {
-//                    print("key2: \(key2)")
-//                    // Key2'ye göre işlemler yapabilirsiniz
-//                }
-//            }
-//            
-//            // Bildirim kategorisine göre işlem yap (isteğe bağlı)
-//            if let category = aps["category"] as? String {
-//                switch category {
-//                case "CATEGORY_IDENTIFIER":
-//                    if let action = userInfo["action"] as? String {
-//                        if action == "START_BUTTON" {
-//                            customPlayer?.send(true, completion: { res in
-//                                AppDelegate.response = res
-//                            })
-//                        } else if action == "START_BUTTON" {
-//                            customPlayer?.send(false, completion: { res in
-//                                AppDelegate.response = res
-//                            })
-//                        }
-//                    }
-//                default:
-//                    break
-//                }
-//            }
-//        }
-//        
-//        // İşlem tamamlandığında completionHandler() fonksiyonunu çağırarak bildirimi tamamla
-//        completionHandler(.newData)
-//    }
-//    
-//    
-    @available(iOS 10, *)
-    func setupNotificationActions() {
-        let startButton = UNNotificationAction(identifier: "START_BUTTON",
-                                               title: "start",
-                                               options: [])
-        let stopButton = UNNotificationAction(identifier: "STOP_BUTTON",
-                                              title: "stop",
-                                              options: [])
-        let category = UNNotificationCategory(identifier: "CATEGORY_IDENTIFIER",
-                                              actions: [startButton,stopButton],
-                                              intentIdentifiers: [],
-                                              options: [])
-        UNUserNotificationCenter.current().setNotificationCategories([category])
-    }
-    
-}
 
-@available(iOS 10, *)
-extension AppDelegate : UNUserNotificationCenterDelegate {
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert, .badge, .sound])
-    }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        customPlayer = CustomAudioPlayer()
-        
-        if response.actionIdentifier == "START_BUTTON" {
-            customPlayer?.send(true, completion: { res in
-                AppDelegate.response = res
-            })
-        } else if response.actionIdentifier == "STOP_BUTTON" {
-            customPlayer?.send(false, completion: { res in
-                AppDelegate.response = res
-            })
-        }
-        completionHandler()
-    }
-    
-}
+    // MARK: UISceneSession Lifecycle
 
-extension AppDelegate : MessagingDelegate {
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        print("Firebase registration token: \(String(describing: fcmToken))")
-        AppDelegate.token = fcmToken ?? ""
-        UserDefaults(suiteName: "group.com.yourapp.widgets")?.set(fcmToken, forKey: "token")
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    
 }

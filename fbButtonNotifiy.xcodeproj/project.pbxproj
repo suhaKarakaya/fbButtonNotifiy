@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020133872C4E6D9000D490F7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F067252C369DE90061BBA0 /* WidgetKit.framework */; };
+		020133882C4E6D9000D490F7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F067272C369DE90061BBA0 /* SwiftUI.framework */; };
+		0201338B2C4E6D9000D490F7 /* ThyNetworkSpeedTestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201338A2C4E6D9000D490F7 /* ThyNetworkSpeedTestBundle.swift */; };
+		0201338D2C4E6D9000D490F7 /* ThyNetworkSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201338C2C4E6D9000D490F7 /* ThyNetworkSpeedTest.swift */; };
+		0201338F2C4E6D9100D490F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0201338E2C4E6D9100D490F7 /* Assets.xcassets */; };
+		020133932C4E6D9100D490F7 /* ThyNetworkSpeedTestExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 020133862C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		020304AA2C35677B0060CA52 /* iCustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020304A92C35677B0060CA52 /* iCustomAudioPlayer.swift */; };
-		020304AD2C3567F30060CA52 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 020304AC2C3567F30060CA52 /* Alamofire */; };
 		021BA6442C356EFE0041E259 /* apple.py in Resources */ = {isa = PBXBuildFile; fileRef = 021BA6432C356EFE0041E259 /* apple.py */; };
-		021BA6472C35702E0041E259 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 021BA6462C35702E0041E259 /* PythonKit */; };
-		025065CD2C38115900B1ED01 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F067252C369DE90061BBA0 /* WidgetKit.framework */; };
-		025065CE2C38115900B1ED01 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F067272C369DE90061BBA0 /* SwiftUI.framework */; };
-		025065D12C38115900B1ED01 /* MyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025065D02C38115900B1ED01 /* MyWidgetBundle.swift */; };
-		025065D32C38115900B1ED01 /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025065D22C38115900B1ED01 /* MyWidget.swift */; };
-		025065D52C38115C00B1ED01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025065D42C38115C00B1ED01 /* Assets.xcassets */; };
-		025065D92C38115C00B1ED01 /* MyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 025065CC2C38115900B1ED01 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		028098F32C4939EF00A15143 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028098F22C4939EF00A15143 /* NotificationService.swift */; };
+		028098F72C4939EF00A15143 /* OneSignalThyNotifiy.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 028098F02C4939EF00A15143 /* OneSignalThyNotifiy.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		028098FE2C493AC300A15143 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 028098FD2C493AC300A15143 /* OneSignalExtension */; };
+		028099002C493AC300A15143 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 028098FF2C493AC300A15143 /* OneSignalFramework */; };
+		028099022C493AC300A15143 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 028099012C493AC300A15143 /* OneSignalInAppMessages */; };
+		028099042C493AC300A15143 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 028099032C493AC300A15143 /* OneSignalLocation */; };
 		02CC8D8E2C3435CE003298B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC8D8D2C3435CE003298B9 /* AppDelegate.swift */; };
 		02CC8D902C3435CE003298B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC8D8F2C3435CE003298B9 /* SceneDelegate.swift */; };
 		02CC8D922C3435CE003298B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC8D912C3435CE003298B9 /* ViewController.swift */; };
@@ -24,18 +28,22 @@
 		02CC8D972C3435D0003298B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02CC8D962C3435D0003298B9 /* Assets.xcassets */; };
 		02CC8D9A2C3435D0003298B9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 02CC8D992C3435D0003298B9 /* Base */; };
 		02CC8DA22C343609003298B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02CC8DA12C343609003298B9 /* GoogleService-Info.plist */; };
-		02CC8DA52C343716003298B9 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 02CC8DA42C343716003298B9 /* FirebaseMessaging */; };
-		02F0671C2C3695DC0061BBA0 /* SpeedcheckerReportSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 02F0671B2C3695DC0061BBA0 /* SpeedcheckerReportSDK */; };
-		02F0671E2C3695DC0061BBA0 /* SpeedcheckerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 02F0671D2C3695DC0061BBA0 /* SpeedcheckerSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		025065D72C38115C00B1ED01 /* PBXContainerItemProxy */ = {
+		020133912C4E6D9100D490F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 02CC8D822C3435CE003298B9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 025065CB2C38115900B1ED01;
-			remoteInfo = MyWidgetExtension;
+			remoteGlobalIDString = 020133852C4E6D8F00D490F7;
+			remoteInfo = ThyNetworkSpeedTestExtension;
+		};
+		028098F52C4939EF00A15143 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CC8D822C3435CE003298B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 028098EF2C4939EE00A15143;
+			remoteInfo = OneSignalThyNotifiy;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,7 +54,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				025065D92C38115C00B1ED01 /* MyWidgetExtension.appex in Embed Foundation Extensions */,
+				028098F72C4939EF00A15143 /* OneSignalThyNotifiy.appex in Embed Foundation Extensions */,
+				020133932C4E6D9100D490F7 /* ThyNetworkSpeedTestExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,13 +63,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		020133862C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThyNetworkSpeedTestExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0201338A2C4E6D9000D490F7 /* ThyNetworkSpeedTestBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThyNetworkSpeedTestBundle.swift; sourceTree = "<group>"; };
+		0201338C2C4E6D9000D490F7 /* ThyNetworkSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThyNetworkSpeedTest.swift; sourceTree = "<group>"; };
+		0201338E2C4E6D9100D490F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		020133902C4E6D9100D490F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		020304A92C35677B0060CA52 /* iCustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCustomAudioPlayer.swift; sourceTree = "<group>"; };
 		021BA6432C356EFE0041E259 /* apple.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = apple.py; sourceTree = "<group>"; };
-		025065CC2C38115900B1ED01 /* MyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		025065D02C38115900B1ED01 /* MyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidgetBundle.swift; sourceTree = "<group>"; };
-		025065D22C38115900B1ED01 /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
-		025065D42C38115C00B1ED01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		025065D62C38115C00B1ED01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028098F02C4939EF00A15143 /* OneSignalThyNotifiy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalThyNotifiy.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		028098F22C4939EF00A15143 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		028098F42C4939EF00A15143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028098FB2C493A6100A15143 /* OneSignalThyNotifiy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalThyNotifiy.entitlements; sourceTree = "<group>"; };
 		02CC8D8A2C3435CE003298B9 /* fbButtonNotifiy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fbButtonNotifiy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CC8D8D2C3435CE003298B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02CC8D8F2C3435CE003298B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,12 +89,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		025065C92C38115900B1ED01 /* Frameworks */ = {
+		020133832C4E6D8F00D490F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				025065CE2C38115900B1ED01 /* SwiftUI.framework in Frameworks */,
-				025065CD2C38115900B1ED01 /* WidgetKit.framework in Frameworks */,
+				020133882C4E6D9000D490F7 /* SwiftUI.framework in Frameworks */,
+				020133872C4E6D9000D490F7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		028098ED2C4939EE00A15143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028098FE2C493AC300A15143 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,33 +110,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02CC8DA52C343716003298B9 /* FirebaseMessaging in Frameworks */,
-				02F0671C2C3695DC0061BBA0 /* SpeedcheckerReportSDK in Frameworks */,
-				020304AD2C3567F30060CA52 /* Alamofire in Frameworks */,
-				021BA6472C35702E0041E259 /* PythonKit in Frameworks */,
-				02F0671E2C3695DC0061BBA0 /* SpeedcheckerSDK in Frameworks */,
+				028099042C493AC300A15143 /* OneSignalLocation in Frameworks */,
+				028099022C493AC300A15143 /* OneSignalInAppMessages in Frameworks */,
+				028099002C493AC300A15143 /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		025065CF2C38115900B1ED01 /* MyWidget */ = {
+		020133892C4E6D9000D490F7 /* ThyNetworkSpeedTest */ = {
 			isa = PBXGroup;
 			children = (
-				025065D02C38115900B1ED01 /* MyWidgetBundle.swift */,
-				025065D22C38115900B1ED01 /* MyWidget.swift */,
-				025065D42C38115C00B1ED01 /* Assets.xcassets */,
-				025065D62C38115C00B1ED01 /* Info.plist */,
+				0201338A2C4E6D9000D490F7 /* ThyNetworkSpeedTestBundle.swift */,
+				0201338C2C4E6D9000D490F7 /* ThyNetworkSpeedTest.swift */,
+				0201338E2C4E6D9100D490F7 /* Assets.xcassets */,
+				020133902C4E6D9100D490F7 /* Info.plist */,
 			);
-			path = MyWidget;
+			path = ThyNetworkSpeedTest;
+			sourceTree = "<group>";
+		};
+		028098F12C4939EF00A15143 /* OneSignalThyNotifiy */ = {
+			isa = PBXGroup;
+			children = (
+				028098FB2C493A6100A15143 /* OneSignalThyNotifiy.entitlements */,
+				028098F22C4939EF00A15143 /* NotificationService.swift */,
+				028098F42C4939EF00A15143 /* Info.plist */,
+			);
+			path = OneSignalThyNotifiy;
 			sourceTree = "<group>";
 		};
 		02CC8D812C3435CE003298B9 = {
 			isa = PBXGroup;
 			children = (
 				02CC8D8C2C3435CE003298B9 /* fbButtonNotifiy */,
-				025065CF2C38115900B1ED01 /* MyWidget */,
+				028098F12C4939EF00A15143 /* OneSignalThyNotifiy */,
+				020133892C4E6D9000D490F7 /* ThyNetworkSpeedTest */,
 				02F067242C369DE90061BBA0 /* Frameworks */,
 				02CC8D8B2C3435CE003298B9 /* Products */,
 			);
@@ -125,7 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				02CC8D8A2C3435CE003298B9 /* fbButtonNotifiy.app */,
-				025065CC2C38115900B1ED01 /* MyWidgetExtension.appex */,
+				028098F02C4939EF00A15143 /* OneSignalThyNotifiy.appex */,
+				020133862C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,21 +191,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		025065CB2C38115900B1ED01 /* MyWidgetExtension */ = {
+		020133852C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 025065DA2C38115C00B1ED01 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */;
+			buildConfigurationList = 020133942C4E6D9100D490F7 /* Build configuration list for PBXNativeTarget "ThyNetworkSpeedTestExtension" */;
 			buildPhases = (
-				025065C82C38115900B1ED01 /* Sources */,
-				025065C92C38115900B1ED01 /* Frameworks */,
-				025065CA2C38115900B1ED01 /* Resources */,
+				020133822C4E6D8F00D490F7 /* Sources */,
+				020133832C4E6D8F00D490F7 /* Frameworks */,
+				020133842C4E6D8F00D490F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyWidgetExtension;
-			productName = MyWidgetExtension;
-			productReference = 025065CC2C38115900B1ED01 /* MyWidgetExtension.appex */;
+			name = ThyNetworkSpeedTestExtension;
+			productName = ThyNetworkSpeedTestExtension;
+			productReference = 020133862C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		028098EF2C4939EE00A15143 /* OneSignalThyNotifiy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 028098FA2C4939EF00A15143 /* Build configuration list for PBXNativeTarget "OneSignalThyNotifiy" */;
+			buildPhases = (
+				028098EC2C4939EE00A15143 /* Sources */,
+				028098ED2C4939EE00A15143 /* Frameworks */,
+				028098EE2C4939EE00A15143 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalThyNotifiy;
+			packageProductDependencies = (
+				028098FD2C493AC300A15143 /* OneSignalExtension */,
+			);
+			productName = OneSignalThyNotifiy;
+			productReference = 028098F02C4939EF00A15143 /* OneSignalThyNotifiy.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		02CC8D892C3435CE003298B9 /* fbButtonNotifiy */ = {
@@ -189,15 +240,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				025065D82C38115C00B1ED01 /* PBXTargetDependency */,
+				028098F62C4939EF00A15143 /* PBXTargetDependency */,
+				020133922C4E6D9100D490F7 /* PBXTargetDependency */,
 			);
 			name = fbButtonNotifiy;
 			packageProductDependencies = (
-				02CC8DA42C343716003298B9 /* FirebaseMessaging */,
-				020304AC2C3567F30060CA52 /* Alamofire */,
-				021BA6462C35702E0041E259 /* PythonKit */,
-				02F0671B2C3695DC0061BBA0 /* SpeedcheckerReportSDK */,
-				02F0671D2C3695DC0061BBA0 /* SpeedcheckerSDK */,
+				028098FF2C493AC300A15143 /* OneSignalFramework */,
+				028099012C493AC300A15143 /* OneSignalInAppMessages */,
+				028099032C493AC300A15143 /* OneSignalLocation */,
 			);
 			productName = fbButtonNotifiy;
 			productReference = 02CC8D8A2C3435CE003298B9 /* fbButtonNotifiy.app */;
@@ -210,11 +260,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					025065CB2C38115900B1ED01 = {
-						CreatedOnToolsVersion = 15.3;
+					020133852C4E6D8F00D490F7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					028098EF2C4939EE00A15143 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 					02CC8D892C3435CE003298B9 = {
 						CreatedOnToolsVersion = 15.3;
@@ -231,27 +284,32 @@
 			);
 			mainGroup = 02CC8D812C3435CE003298B9;
 			packageReferences = (
-				02CC8DA32C343716003298B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				020304AB2C3567F30060CA52 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				021BA6452C35702E0041E259 /* XCRemoteSwiftPackageReference "PythonKit" */,
-				02F0671A2C3695DB0061BBA0 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */,
+				028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
 			);
 			productRefGroup = 02CC8D8B2C3435CE003298B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				02CC8D892C3435CE003298B9 /* fbButtonNotifiy */,
-				025065CB2C38115900B1ED01 /* MyWidgetExtension */,
+				028098EF2C4939EE00A15143 /* OneSignalThyNotifiy */,
+				020133852C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		025065CA2C38115900B1ED01 /* Resources */ = {
+		020133842C4E6D8F00D490F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				025065D52C38115C00B1ED01 /* Assets.xcassets in Resources */,
+				0201338F2C4E6D9100D490F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		028098EE2C4939EE00A15143 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,12 +328,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		025065C82C38115900B1ED01 /* Sources */ = {
+		020133822C4E6D8F00D490F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				025065D12C38115900B1ED01 /* MyWidgetBundle.swift in Sources */,
-				025065D32C38115900B1ED01 /* MyWidget.swift in Sources */,
+				0201338D2C4E6D9000D490F7 /* ThyNetworkSpeedTest.swift in Sources */,
+				0201338B2C4E6D9000D490F7 /* ThyNetworkSpeedTestBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		028098EC2C4939EE00A15143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028098F32C4939EF00A15143 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +359,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		025065D82C38115C00B1ED01 /* PBXTargetDependency */ = {
+		020133922C4E6D9100D490F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 025065CB2C38115900B1ED01 /* MyWidgetExtension */;
-			targetProxy = 025065D72C38115C00B1ED01 /* PBXContainerItemProxy */;
+			target = 020133852C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension */;
+			targetProxy = 020133912C4E6D9100D490F7 /* PBXContainerItemProxy */;
+		};
+		028098F62C4939EF00A15143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 028098EF2C4939EE00A15143 /* OneSignalThyNotifiy */;
+			targetProxy = 028098F52C4939EF00A15143 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -320,7 +391,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		025065DB2C38115C00B1ED01 /* Debug */ = {
+		020133952C4E6D9100D490F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,16 +400,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H45HF84T2B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_FILE = ThyNetworkSpeedTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThyNetworkSpeedTest;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ifloop.shaPrayerTime.MyWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifloop.shaPrayerTime.ThyNetworkSpeedTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -347,7 +419,7 @@
 			};
 			name = Debug;
 		};
-		025065DC2C38115C00B1ED01 /* Release */ = {
+		020133962C4E6D9100D490F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -356,16 +428,71 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H45HF84T2B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_FILE = ThyNetworkSpeedTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThyNetworkSpeedTest;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ifloop.shaPrayerTime.MyWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifloop.shaPrayerTime.ThyNetworkSpeedTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		028098F82C4939EF00A15143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalThyNotifiy/OneSignalThyNotifiy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45HF84T2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalThyNotifiy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalThyNotifiy;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifloop.shaPrayerTime.OneSignalThyNotifiy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		028098F92C4939EF00A15143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalThyNotifiy/OneSignalThyNotifiy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H45HF84T2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalThyNotifiy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalThyNotifiy;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifloop.shaPrayerTime.OneSignalThyNotifiy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -556,11 +683,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		025065DA2C38115C00B1ED01 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */ = {
+		020133942C4E6D9100D490F7 /* Build configuration list for PBXNativeTarget "ThyNetworkSpeedTestExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				025065DB2C38115C00B1ED01 /* Debug */,
-				025065DC2C38115C00B1ED01 /* Release */,
+				020133952C4E6D9100D490F7 /* Debug */,
+				020133962C4E6D9100D490F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		028098FA2C4939EF00A15143 /* Build configuration list for PBXNativeTarget "OneSignalThyNotifiy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				028098F82C4939EF00A15143 /* Debug */,
+				028098F92C4939EF00A15143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -586,65 +722,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		020304AB2C3567F30060CA52 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.1;
-			};
-		};
-		021BA6452C35702E0041E259 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pvieito/PythonKit.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		02CC8DA32C343716003298B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.28.1;
-			};
-		};
-		02F0671A2C3695DB0061BBA0 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/speedchecker/speedchecker-sdk-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.3;
+				minimumVersion = 5.2.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		020304AC2C3567F30060CA52 /* Alamofire */ = {
+		028098FD2C493AC300A15143 /* OneSignalExtension */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 020304AB2C3567F30060CA52 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = 028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
 		};
-		021BA6462C35702E0041E259 /* PythonKit */ = {
+		028098FF2C493AC300A15143 /* OneSignalFramework */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 021BA6452C35702E0041E259 /* XCRemoteSwiftPackageReference "PythonKit" */;
-			productName = PythonKit;
+			package = 028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
 		};
-		02CC8DA42C343716003298B9 /* FirebaseMessaging */ = {
+		028099012C493AC300A15143 /* OneSignalInAppMessages */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02CC8DA32C343716003298B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
+			package = 028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalInAppMessages;
 		};
-		02F0671B2C3695DC0061BBA0 /* SpeedcheckerReportSDK */ = {
+		028099032C493AC300A15143 /* OneSignalLocation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 02F0671A2C3695DB0061BBA0 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */;
-			productName = SpeedcheckerReportSDK;
-		};
-		02F0671D2C3695DC0061BBA0 /* SpeedcheckerSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 02F0671A2C3695DB0061BBA0 /* XCRemoteSwiftPackageReference "speedchecker-sdk-ios" */;
-			productName = SpeedcheckerSDK;
+			package = 028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalLocation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
