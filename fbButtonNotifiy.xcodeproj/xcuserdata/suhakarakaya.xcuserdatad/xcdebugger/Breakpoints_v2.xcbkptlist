@@ -23,32 +23,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "27915C1F-D9F9-4EE0-99D1-3D47149EFCF2"
+            uuid = "ECEB8988-328C-4141-BF58-D2776867C095"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ThyNetworkSpeedTest/ThyNetworkSpeedTest.swift"
+            filePath = "fbButtonNotifiy/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "fetchValueFromService(completion:)"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
+            landmarkName = "measureInternetSpeed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B6472D67-5805-4B4F-A011-532A68E2DA27"
+            uuid = "D8D2698D-32A2-4E37-ACF3-998DBDEEA919"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ThyNetworkSpeedTest/ThyNetworkSpeedTest.swift"
+            filePath = "fbButtonNotifiy/NetworkSpeedTest4.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "getTimeline(in:completion:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "calculateBDP(bandwidth:latency:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8693DBA0-068F-4848-AE50-D3E2BF583D8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fbButtonNotifiy/NetworkSpeedTest4.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "measureBandwidth(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FEC88D6-E021-479B-8BBC-0FFAE2812345"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fbButtonNotifiy/NetworkSpeedTest4.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "measureLatency(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "187A7B8B-214B-4065-B69C-7D1C7CDF5E56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "fbButtonNotifiy/NetworkSpeedTest4.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "measureLatency(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

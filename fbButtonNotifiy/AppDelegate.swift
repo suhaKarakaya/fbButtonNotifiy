@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Remove this method to stop OneSignal Debugging
-        OneSignal.Debug.setLogLevel(.LL_VERBOSE)
+//      OneSignal.Debug.setLogLevel(.LL_VERBOSE)
         
         // OneSignal initialization
         OneSignal.initialize("363e61c4-affe-4352-b693-397a750b6b60", withLaunchOptions: launchOptions)
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // requestPermission will show the native iOS notification permission prompt.
         // We recommend removing the following code and instead using an In-App Message to prompt for notification permission
         OneSignal.Notifications.requestPermission({ accepted in
-            print("User accepted notifications: \(accepted)")
+//            print("User accepted notifications: \(accepted)")
             self.userId = OneSignal.User.pushSubscription.id ?? ""
         }, fallbackToSettings: true)
         

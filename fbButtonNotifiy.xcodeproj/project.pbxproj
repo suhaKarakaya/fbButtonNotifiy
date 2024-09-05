@@ -14,13 +14,19 @@
 		0201338F2C4E6D9100D490F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0201338E2C4E6D9100D490F7 /* Assets.xcassets */; };
 		020133932C4E6D9100D490F7 /* ThyNetworkSpeedTestExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 020133862C4E6D8F00D490F7 /* ThyNetworkSpeedTestExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		020304AA2C35677B0060CA52 /* iCustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020304A92C35677B0060CA52 /* iCustomAudioPlayer.swift */; };
-		021BA6442C356EFE0041E259 /* apple.py in Resources */ = {isa = PBXBuildFile; fileRef = 021BA6432C356EFE0041E259 /* apple.py */; };
+		020E79722C52229E00012B98 /* NetworkSpeedTest3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020E79712C52229E00012B98 /* NetworkSpeedTest3.swift */; };
+		0243DC8F2C50D41400865393 /* NetworkSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFE8B52C4FD87B007A2142 /* NetworkSpeedTest.swift */; };
+		0243DC912C50E72300865393 /* NetworkSpeedTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243DC902C50E72300865393 /* NetworkSpeedTest2.swift */; };
+		0243DC932C510A8200865393 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0243DC922C510A8200865393 /* Counter.swift */; };
+		02590E612C5A647C00897369 /* NetworkSpeedTest4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02590E602C5A647C00897369 /* NetworkSpeedTest4.swift */; };
 		028098F32C4939EF00A15143 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028098F22C4939EF00A15143 /* NotificationService.swift */; };
 		028098F72C4939EF00A15143 /* OneSignalThyNotifiy.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 028098F02C4939EF00A15143 /* OneSignalThyNotifiy.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		028098FE2C493AC300A15143 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 028098FD2C493AC300A15143 /* OneSignalExtension */; };
 		028099002C493AC300A15143 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 028098FF2C493AC300A15143 /* OneSignalFramework */; };
 		028099022C493AC300A15143 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 028099012C493AC300A15143 /* OneSignalInAppMessages */; };
 		028099042C493AC300A15143 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 028099032C493AC300A15143 /* OneSignalLocation */; };
+		02AFE8B42C4FBF3D007A2142 /* SwiftyPing in Frameworks */ = {isa = PBXBuildFile; productRef = 02AFE8B32C4FBF3D007A2142 /* SwiftyPing */; };
+		02AFE8B62C4FD87B007A2142 /* NetworkSpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AFE8B52C4FD87B007A2142 /* NetworkSpeedTest.swift */; };
 		02CC8D8E2C3435CE003298B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC8D8D2C3435CE003298B9 /* AppDelegate.swift */; };
 		02CC8D902C3435CE003298B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC8D8F2C3435CE003298B9 /* SceneDelegate.swift */; };
 		02CC8D922C3435CE003298B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC8D912C3435CE003298B9 /* ViewController.swift */; };
@@ -69,11 +75,15 @@
 		0201338E2C4E6D9100D490F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		020133902C4E6D9100D490F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		020304A92C35677B0060CA52 /* iCustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCustomAudioPlayer.swift; sourceTree = "<group>"; };
-		021BA6432C356EFE0041E259 /* apple.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = apple.py; sourceTree = "<group>"; };
+		020E79712C52229E00012B98 /* NetworkSpeedTest3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpeedTest3.swift; sourceTree = "<group>"; };
+		0243DC902C50E72300865393 /* NetworkSpeedTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpeedTest2.swift; sourceTree = "<group>"; };
+		0243DC922C510A8200865393 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		02590E602C5A647C00897369 /* NetworkSpeedTest4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpeedTest4.swift; sourceTree = "<group>"; };
 		028098F02C4939EF00A15143 /* OneSignalThyNotifiy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalThyNotifiy.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		028098F22C4939EF00A15143 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		028098F42C4939EF00A15143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028098FB2C493A6100A15143 /* OneSignalThyNotifiy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalThyNotifiy.entitlements; sourceTree = "<group>"; };
+		02AFE8B52C4FD87B007A2142 /* NetworkSpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpeedTest.swift; sourceTree = "<group>"; };
 		02CC8D8A2C3435CE003298B9 /* fbButtonNotifiy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fbButtonNotifiy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CC8D8D2C3435CE003298B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02CC8D8F2C3435CE003298B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +122,7 @@
 			files = (
 				028099042C493AC300A15143 /* OneSignalLocation in Frameworks */,
 				028099022C493AC300A15143 /* OneSignalInAppMessages in Frameworks */,
+				02AFE8B42C4FBF3D007A2142 /* SwiftyPing in Frameworks */,
 				028099002C493AC300A15143 /* OneSignalFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +185,11 @@
 				02CC8D9B2C3435D0003298B9 /* Info.plist */,
 				02CC8DA12C343609003298B9 /* GoogleService-Info.plist */,
 				020304A92C35677B0060CA52 /* iCustomAudioPlayer.swift */,
-				021BA6432C356EFE0041E259 /* apple.py */,
+				02AFE8B52C4FD87B007A2142 /* NetworkSpeedTest.swift */,
+				0243DC902C50E72300865393 /* NetworkSpeedTest2.swift */,
+				0243DC922C510A8200865393 /* Counter.swift */,
+				020E79712C52229E00012B98 /* NetworkSpeedTest3.swift */,
+				02590E602C5A647C00897369 /* NetworkSpeedTest4.swift */,
 			);
 			path = fbButtonNotifiy;
 			sourceTree = "<group>";
@@ -248,6 +263,7 @@
 				028098FF2C493AC300A15143 /* OneSignalFramework */,
 				028099012C493AC300A15143 /* OneSignalInAppMessages */,
 				028099032C493AC300A15143 /* OneSignalLocation */,
+				02AFE8B32C4FBF3D007A2142 /* SwiftyPing */,
 			);
 			productName = fbButtonNotifiy;
 			productReference = 02CC8D8A2C3435CE003298B9 /* fbButtonNotifiy.app */;
@@ -285,6 +301,7 @@
 			mainGroup = 02CC8D812C3435CE003298B9;
 			packageReferences = (
 				028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				02AFE8B22C4FBDD5007A2142 /* XCRemoteSwiftPackageReference "SwiftyPing" */,
 			);
 			productRefGroup = 02CC8D8B2C3435CE003298B9 /* Products */;
 			projectDirPath = "";
@@ -319,7 +336,6 @@
 			files = (
 				02CC8D972C3435D0003298B9 /* Assets.xcassets in Resources */,
 				02CC8DA22C343609003298B9 /* GoogleService-Info.plist in Resources */,
-				021BA6442C356EFE0041E259 /* apple.py in Resources */,
 				02CC8D9A2C3435D0003298B9 /* Base in Resources */,
 				02CC8D952C3435CE003298B9 /* Base in Resources */,
 			);
@@ -332,8 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0243DC932C510A8200865393 /* Counter.swift in Sources */,
 				0201338D2C4E6D9000D490F7 /* ThyNetworkSpeedTest.swift in Sources */,
 				0201338B2C4E6D9000D490F7 /* ThyNetworkSpeedTestBundle.swift in Sources */,
+				0243DC8F2C50D41400865393 /* NetworkSpeedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AFE8B62C4FD87B007A2142 /* NetworkSpeedTest.swift in Sources */,
+				02590E612C5A647C00897369 /* NetworkSpeedTest4.swift in Sources */,
 				020304AA2C35677B0060CA52 /* iCustomAudioPlayer.swift in Sources */,
 				02CC8D922C3435CE003298B9 /* ViewController.swift in Sources */,
 				02CC8D8E2C3435CE003298B9 /* AppDelegate.swift in Sources */,
 				02CC8D902C3435CE003298B9 /* SceneDelegate.swift in Sources */,
+				020E79722C52229E00012B98 /* NetworkSpeedTest3.swift in Sources */,
+				0243DC912C50E72300865393 /* NetworkSpeedTest2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +752,14 @@
 				minimumVersion = 5.2.2;
 			};
 		};
+		02AFE8B22C4FBDD5007A2142 /* XCRemoteSwiftPackageReference "SwiftyPing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/samiyr/SwiftyPing.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -752,6 +782,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 028098FC2C493AC300A15143 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
 			productName = OneSignalLocation;
+		};
+		02AFE8B32C4FBF3D007A2142 /* SwiftyPing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02AFE8B22C4FBDD5007A2142 /* XCRemoteSwiftPackageReference "SwiftyPing" */;
+			productName = SwiftyPing;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
